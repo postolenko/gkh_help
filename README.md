@@ -1,1 +1,1 @@
-# http://postolenko.io/gkh_help/index.html
+# http://github.postolenko.io/gkh_help/index.html
