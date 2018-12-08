@@ -88,12 +88,13 @@ html {
 
 html,
 body {
+    background: #ffffff;
     min-height: 100%;
     min-width: 100%;
 }
 
 body {
-    background: #ffffff;
+    /*background: #ffffff;*/
 }
 
 .wrapper {
@@ -1432,13 +1433,37 @@ textarea:focus {
 /*-- Popup --*/
 
 .popup_wrapp {
-    display: none;
+    opacity: 0;
+    z-index: -1;
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     background: rgba(242, 242, 242, .95);
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.popup_wrapp.active {
+    opacity: 1;
     z-index: 15;
 }
 
@@ -1470,6 +1495,7 @@ textarea:focus {
     position: absolute;
     top: 27px;
     right: 20px;
+    z-index: 2;
 }
 
 .popup_title {
@@ -1505,8 +1531,14 @@ textarea:focus {
 }
 
 .pagination {
-    padding: 5px 0;
+    padding: 3px 0;
     text-align: center;
+}
+
+.pagination .slick-arrow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px;
 }
 
 .pagination li {
@@ -1515,7 +1547,7 @@ textarea:focus {
     padding: 3px;
 }
 
-.pagination li a {
+/*.pagination li a {
     display: inline-block;
     vertical-align: top;
     display: block;
@@ -1558,13 +1590,13 @@ textarea:focus {
 
 .pagination li a:hover {
     opacity: 1;
-}
+}*/
 
-.prev_arrow i {
+/*.prev_arrow i {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     transform: rotate(-180deg);
-}
+}*/
 
 
 

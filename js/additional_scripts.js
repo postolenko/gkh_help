@@ -25,8 +25,18 @@ $(document).ready(function() {
         slidesToScroll: 1,
         fade: true,
         appendArrows: $(".slider_arrows")
-        // prevArrow: ,
-        // nextArrow
+    });
+
+    $(".popup_news_slider").not(".slick-initialized").slick({
+        dots: false,
+        arrows: true,
+        // autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        appendArrows: $(".pagination")
     });
 
 });

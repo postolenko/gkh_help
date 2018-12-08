@@ -27,17 +27,17 @@ $(document).ready(function() {
         popupName = $(this).attr("data-popup-name");
         popupBlock = $("[data-popup = '"+ popupName +"']");
 
-        popupBlock.fadeIn(400);
+        popupBlock.addClass("active");
 
     });
 
-     $(this).keydown(function(eventObject){
+    $(this).keydown(function(eventObject){
 
         if (eventObject.which == 27) {
 
-            if ( $(".popup_wrapp").is(":visible") ) {
+            if ( $(".popup_wrapp").hasClass("active") ) {
 
-                $(".popup_wrapp").fadeOut(300);
+                $(".popup_wrapp").removeClass("active");
 
             }
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         popupBlock = $(this).closest(".popup_wrapp");
 
-        popupBlock.fadeOut(300);
+        popupBlock.removeClass("active");
 
     });
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
             && hide_element.has(e.target).length === 0) {
 
-            hide_element.closest(".popup_wrapp").fadeOut(300);
+            hide_element.closest(".popup_wrapp").removeClass("active");
         }
 
     });
