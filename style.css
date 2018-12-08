@@ -654,7 +654,7 @@ textarea:focus {
     top: 0;
     left: 0;
     background-color: #F9F9FA;
-    padding: 37px 0 0 0;
+    /*padding: 37px 0 0 0;*/
     z-index: 3;
 }
 
@@ -784,7 +784,7 @@ textarea:focus {
 }
 
 .list_3 {
-    margin: 19px -8px 8px -8px;
+    margin: 0 -8px;
 }
 
 .list_3 li {
