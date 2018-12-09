@@ -377,9 +377,9 @@ textarea::placeholder {
 }
 
 .row_2 {
-    /*padding-left: 11.7%;*/
-    /*padding-left: 14%;*/
-    padding-left: 15.5%;
+    width: 84.5%;
+    float: right;
+    padding-left: 10px;
 }
 
 .offset-ziro {
