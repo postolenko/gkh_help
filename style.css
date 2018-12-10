@@ -1288,6 +1288,30 @@ input.transparent_red_pill {
     margin-top: -6px;
 }
 
+/*-- Header 2 --*/
+
+.header .row > .right {
+    padding-top: 12px;
+}
+
+.header_2 .right .left:nth-child(1) {
+    width: 24%;
+    padding-top: 7px;
+}
+
+.header_2 .right .left:nth-child(2) {
+    width: 33%;
+    text-align: left;
+    padding-top: 0;
+}
+
+.header_2 .right .right {
+    width: 43%;
+    padding-top: 7px;
+}
+
+/*-- /Header 2 --*/
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -1973,7 +1997,6 @@ input.transparent_red_pill {
 
 .thanks_desc p {
     padding: 12px 0 14px 0;
-    /*padding-bottom: 28px;*/
     font-size: 20px;
     line-height: 28px;
 }
@@ -1988,6 +2011,141 @@ input.transparent_red_pill {
 }
 
 /*-- /Section 1 - Thanks --*/
+
+/*-- Section 1 - Moi Zayavki --*/
+
+.orders_wrapp {
+    margin: 8px 0 67px 0;
+}
+
+.order {
+    max-width: 574px;
+    margin: 8px 0 19px 0;
+    padding: 18px 2% 29px 2%;
+    background: #F6F7F8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.order.important {
+    background: #ECFFF5;
+}
+
+.order.red_circle:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #F25959;
+    position: absolute;
+    top: 21px;
+    right: 3.5%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.orders_wrapp h3 {
+    padding-bottom: 49px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order-two_cols {
+    display: table;
+    width: 100%;
+}
+
+.order-two_cols .col:nth-child(1) {
+    display: table-cell;
+    vertical-align: top;
+    width: 171px;
+    padding: 5px 5px 5px 0;
+}
+
+.order-two_cols .col:nth-child(2) {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 5px 0 5px 5px; 
+}
+
+.order-two_cols .upload_image {
+    max-width: 157px;
+}
+
+.order-two_cols h4 {   
+    padding-bottom: 8px; 
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.order-two_cols p {
+    padding-bottom: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(30, 30, 30, .7);
+}
+
+.order-two_cols.order_title {
+    margin-bottom: 0;
+}
+
+.order-two_cols.order_title p {
+    padding-bottom: 0;
+}
+
+.order-two_cols.order_title .col {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.date {
+    padding-bottom: 1px;
+    font-size: 14px;
+    color: rgba(30, 30, 30, .5);
+}
+
+p.green-p {
+    padding: 0;
+    font-size: 14px;
+    color: #00AA71;
+    position: .5;
+}
+
+.order .p-red {
+    padding: 3px 0;
+    font-size: 16px;
+    color: #F25959;
+}
+
+.transparent_red_pill_2 {
+    font-size: 13px;
+    color: #F25959;
+    font-weight: normal;
+    border-color: #F25959;
+    padding: 10px 28px;
+}
+
+.order .green-p_2 {
+    padding: 3px 0;
+    font-size: 16px;
+    color: #00AA71;
+}
+
+.transparent_pill_2 {
+    font-size: 16px;
+    color: #00AA71;
+    font-weight: normal;
+    border-color: #00AA71;
+    padding: 10px 18px;
+}
+
+
+/*-- /Section 1 - Moi Zayavki --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

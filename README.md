@@ -9,3 +9,5 @@
 # http://postolenko.github.io/gkh_help/podacha_zayavki_6.html
 # http://postolenko.github.io/gkh_help/podacha_zayavki_7.html
 # http://postolenko.github.io/gkh_help/thanks.html
+# http://postolenko.github.io/gkh_help/moi_zayavki.html
+# http://postolenko.github.io/gkh_help/moi_zayavki_2.html
