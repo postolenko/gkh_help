@@ -740,9 +740,9 @@ textarea::placeholder {
 .red_pill {
     display: inline-block;
     vertical-align: top;
-    min-width: 255px;
+    /*min-width: 255px;*/
     margin: 10px 0;
-    padding: 18px 10px;
+    padding: 18px 40px;
     background: #FF5555;
     border: 1px solid #FF5555;
     text-align: center;
@@ -800,9 +800,9 @@ textarea::placeholder {
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
-    min-width: 255px;
+    /*min-width: 255px;*/
     margin: 10px 0;
-    padding: 18px 10px;
+    padding: 18px 40px;
     background: #00AA71;
     border: 1px solid #00AA71;
     text-align: center;
@@ -866,9 +866,9 @@ input.green_pill_2 {
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
-    min-width: 255px;
+    /*min-width: 255px;*/
     margin: 10px 0;
-    padding: 18px 38px;
+    padding: 18px 40px;
     background: transparent;
     border: 1px solid #00AA71;
     text-align: center;
@@ -927,9 +927,9 @@ input.transparent_pill {
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
-    min-width: 255px;
+    /*min-width: 255px;*/
     margin: 10px 0;
-    padding: 18px 38px;
+    padding: 18px 40px;
     background: transparent;
     border: 1px solid #F25959;
     text-align: center;
@@ -969,14 +969,12 @@ input.transparent_red_pill {
 
 .transparent_red_pill:link,
 .transparent_red_pill:visited {
-    /*border: 1px solid #F25959;*/
     background: transparent;
     color: #F25959;
 }
 
 .transparent_red_pill:active,
 .transparent_red_pill.active {
-    /*border: 1px solid #00AA71;*/
     background: #F25959;
     color: #ffffff;
 }
@@ -1023,6 +1021,26 @@ input.transparent_red_pill {
     background-position: center;
 }
 
+.reload {
+    display: block;
+    width: 28px;
+    height: 30px;
+    background-image: url(img/reload.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.delete {
+    display: block;
+    width: 25px;
+    height: 30px;
+    background-image: url(img/delete.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /*-- /Icons --*/
 
 /*-------------------------------------------*/
@@ -1040,7 +1058,7 @@ input.transparent_red_pill {
 
 .header .row > .left {
     width: 15.5%;
-    padding: 12px 10px 10px 0;
+    padding: 12px 10px 16px 0;
 }
 
 .header .row > .right {
@@ -1077,7 +1095,7 @@ input.transparent_red_pill {
     padding-right: 10px;
 }
 
-.header .right .left:nth-child(3) {
+.header .right .right {
     width: 29%;
     text-align: right;
     padding-left: 10px;
@@ -1236,6 +1254,7 @@ input.transparent_red_pill {
     content: "";
     width: 8px;
     height: 8px;
+    opacity: 0;
     position: absolute;
     top: 6px;
     right: -12px;
@@ -1243,6 +1262,10 @@ input.transparent_red_pill {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+}
+
+.link_2.notif:after {
+    opacity: 1;
 }
 
 .link_2:link,
@@ -1819,7 +1842,152 @@ input.transparent_red_pill {
 
 /*-- /Section 1 - Подача заявки 3 --*/
 
+/*-- Section 1 - Подача заявки 6 --*/
 
+.upload_image {
+    height: 102px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #00AA71;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-image: url(img/photo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.upload_image img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upload_image .mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.upload_image:hover .mask {
+    opacity: 1;
+}
+
+.upload_image .mask a {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.upload_image .mask a:nth-child(1) {
+    left: 20%;
+}
+
+.upload_image .mask a:nth-child(2) {
+    right: 20%;
+}
+
+/*-- /Section 1 - Подача заявки 6 --*/
+
+/*-- Section 1 - Подача заявки 7 --*/
+
+.form_wrapp.form_wrapp_2 {
+    max-width: 100%;
+}
+
+.upload_wrapp {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 5px);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.upload_wrapp input {
+    width: 0;
+    height: 0;
+    padding: 0;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upload_wrapp label {
+    display: block;
+    width: 100%;
+    height: 102px;
+    cursor: pointer;
+    border: 1px solid #00AA71;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-image: url(img/upload.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*-- /Section 1 - Подача заявки 7 --*/
+
+/*-- /Section 1 - Thanks --*/
+
+.thanks_desc {
+    max-width: 540px;
+    margin-bottom: 50px;
+}
+
+.thanks_desc p {
+    padding: 12px 0 14px 0;
+    /*padding-bottom: 28px;*/
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.thanks_desc p:nth-child(1) {
+    padding-top: 0;
+}
+
+.thanks_desc .green_pill_2 {
+    min-width: auto;
+    margin: 14px 0;
+}
+
+/*-- /Section 1 - Thanks --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -2024,10 +2192,6 @@ input.transparent_red_pill {
     font-weight: bold;
 }
 
-.popup_article {
-
-}
-
 .popup_article img {
     float: left;
     margin: 14px 20px 10px 0;
@@ -2056,58 +2220,5 @@ input.transparent_red_pill {
     vertical-align: top;
     padding: 3px;
 }
-
-/*.pagination li a {
-    display: inline-block;
-    vertical-align: top;
-    display: block;
-    width: 44px;
-    height: 44px;
-    cursor: pointer;
-    opacity: .5;
-    border: 1px solid transparent;
-    background-color: transparent;
-    -webkit-transition-property: opacity;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: opacity;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: opacity;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: opacity;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-.pagination li a:link,
-.pagination li a:visited {
-    opacity: .5;
-}
-
-.pagination li a:active,
-.pagination li a.active {
-    opacity: 1;
-}
-
-.pagination li a:hover {
-    opacity: 1;
-}*/
-
-/*.prev_arrow i {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}*/
-
-
 
 /*-- /Popup --*/

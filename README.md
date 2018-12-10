@@ -6,3 +6,6 @@
 # http://postolenko.github.io/gkh_help/podacha_zayavki_3.html
 # http://postolenko.github.io/gkh_help/podacha_zayavki_4.html
 # http://postolenko.github.io/gkh_help/podacha_zayavki_5.html
+# http://postolenko.github.io/gkh_help/podacha_zayavki_6.html
+# http://postolenko.github.io/gkh_help/podacha_zayavki_7.html
+# http://postolenko.github.io/gkh_help/thanks.html
