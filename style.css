@@ -1226,6 +1226,8 @@ input.transparent_red_pill {
 .list_3 li a:active,
 .list_3 li a.active {
     opacity: 1;
+    color: #00AA71;
+    border-bottom: 1px solid #00AA71;
 }
 
 .list_3 li a:hover {
@@ -1307,7 +1309,7 @@ input.transparent_red_pill {
 
 .header_2 .right .right {
     width: 43%;
-    padding-top: 7px;
+    padding-top: 13px;
 }
 
 /*-- /Header 2 --*/
@@ -2216,6 +2218,104 @@ p.green-p {
 }
 
 /*-- /Section 1 - Soglashenie --*/
+
+/*-- Section 1 - Private --*/
+
+.two-cols_2 {
+    margin-bottom: 70px;
+}
+
+.two-cols_2 .left {
+    width: 66%;
+    padding: 0 10px 0 0;
+}
+
+.two-cols_2 .right {
+    width: 34%;
+    padding: 2px 0 0 10px;
+}
+
+.user_info {
+    margin: 0 0 23px 0;
+}
+
+.user_info:last-child {
+    margin: 0 0 10px 0;
+}
+
+.user_info p {
+    padding: 4px 0;
+    font-size: 15px;
+    color: rgba(30, 30, 30, .5);
+}
+
+.user_info .p-2 {
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.user_info .black_link {
+    font-size: 20px;
+    opacity: .7;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.user_info .black_link:hover {
+    opacity: 1;
+}
+
+.user_info p.red {
+    color: #F25959;
+}
+
+.orders_info p {
+    padding: 11px 0;
+    line-height: 18px;
+}
+
+.orders_info p:nth-child(1) {
+    padding-top: 7px;
+}
+
+.orders_info a {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: underline;
+}
+
+.orders_info a:link,
+.orders_info a:visited {
+    text-decoration: underline;
+}
+
+.orders_info a:active,
+.orders_info a.active {
+    text-decoration: none;
+}
+
+.orders_info a:hover {
+    text-decoration: none;
+}
+
+/*-- /Section 1 - Private --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
