@@ -13,3 +13,4 @@
 # http://postolenko.github.io/gkh_help/moi_zayavki_2.html
 # http://postolenko.github.io/gkh_help/soglashenie.html
 # http://postolenko.github.io/gkh_help/private.html
+# http://postolenko.github.io/gkh_help/private_edit.html
