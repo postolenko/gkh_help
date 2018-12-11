@@ -1,6 +1,7 @@
 $(window).on("load",function(){
 
 	$(".scroll").mCustomScrollbar();
+    $(".scroll_box").mCustomScrollbar();
 
 });
 

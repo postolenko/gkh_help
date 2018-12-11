@@ -2144,8 +2144,78 @@ p.green-p {
     padding: 10px 18px;
 }
 
-
 /*-- /Section 1 - Moi Zayavki --*/
+
+/*-- Section 1 - Soglashenie --*/
+
+.scroll_box_sect {
+    max-width: 575px;
+    padding: 73px 0 33px 0;
+}
+
+.scroll_box_wrapp {
+    position: relative;
+    padding: 15px 0;
+}
+
+.scroll_box {
+    height: 345px;
+}
+
+.scroll_box_wrapp:before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(img/arrows.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.scroll_box_wrapp:after {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(img/arrows.svg);
+    background-position: 0 -13px;
+    background-repeat: no-repeat;
+}
+
+.scroll_box p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.btn_wrapp_2 {
+    display: table;
+    width: 100%;
+}
+
+.btn_wrapp_2 .col {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn_wrapp_2 .col:nth-child(1) {
+    padding-right: 5px;
+}
+
+.btn_wrapp_2 .col:nth-child(2) {
+    padding-left: 5px;
+    text-align: right;
+}
+
+/*-- /Section 1 - Soglashenie --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

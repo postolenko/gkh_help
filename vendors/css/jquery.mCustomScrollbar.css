@@ -1274,3 +1274,40 @@ yx-axis
     right: -10px;
     height: auto;
 }
+
+.mCSB_scrollTools {
+    right: 1px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 12px;
+    background: #CACBCC;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 14px;
+    height: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.mCSB_scrollTools {
+    width: 22px;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #00AA71;
+}
