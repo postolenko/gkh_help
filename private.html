@@ -94,10 +94,34 @@
 									<div class="user_info">
 										<p>Адрес 1</p>
 										<p class="p-2">ул. Куйбышева 111 кв. 93</p>
+										<!-- <div class="inner-row">
+											<div class="col">
+												<p>Улица</p>
+											</div>
+											<div class="col">
+												<p>Куйбышева</p>
+											</div>
+										</div>
+										<div class="inner-row">
+											<div class="col">
+												<p>Дом</p>
+											</div>
+											<div class="col">
+												<p>111</p>
+											</div>
+										</div>
+										<div class="inner-row">
+											<div class="col">
+												<p>Квартира</p>
+											</div>
+											<div class="col">
+												<p>93</p>
+											</div>
+										</div> -->
 									</div>
 									<div class="user_info">
-										<p>Адрес 2</p>
-										<p class="p-2"><a href="#" class="black_link">+ Добавить</a></p>
+										<p>Адрес <span class="index">2</span></p>
+										<p class="p-2"><a href="#" class="black_link show_popup add_info_link" data-popup-name ="popup_2">+ Добавить</a></p>
 									</div>
 									<div class="user_info">
 										<p>Телефон</p>
@@ -170,6 +194,50 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="popup_wrapp scroll" data-popup ="popup_2">
+		<div class="popup popup_2">
+			<button type="button" class="close-popup"></button>
+			<div id="add_info">
+				<form>
+					<div class="popup-add_info">
+						<div class="user_info">
+							<p>Улица</p>
+							<div class="input_wrapp">
+								<input type="text" placeholder="" required id="street" />
+							</div>
+						</div>
+						<div class="user_info">
+							<p>Дом</p>
+							<div class="input_wrapp">
+								<input type="text" placeholder="" required id="home" />
+							</div>
+						</div>
+						<div class="user_info">
+							<p>Корпус</p>
+							<div class="input_wrapp">
+								<input type="text" placeholder="" id="corp" />
+							</div>
+						</div>
+						<div class="user_info">
+							<p>Квартира</p>
+							<div class="input_wrapp">
+								<input type="text" placeholder="" required id="flat" />
+							</div>
+						</div>
+					</div>
+					<div class="btn_wrapp_2">
+						<div class="col">
+							<a href="#" class="green_pill_2 save">Сохранить</a>
+						</div>
+						<div class="col">
+							<a href="#" class="red_pill cansel">Отмена</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<!-- /Footer -->
 
