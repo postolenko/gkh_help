@@ -8,17 +8,56 @@ $(window).load(function() {
 
 	getFooterPosition();
 	getDocumentTopPadding();
+    getAdaptivePositionElements();
+    getPromoHeight();
 
 });
 
 $(window).resize(function() {
     
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
 	getFooterPosition();
 	getDocumentTopPadding();
+    getAdaptivePositionElements();
+    getPromoHeight();
 
 });
 
-$(document).ready(function() {   
+$(document).ready(function() {
+
+    $(".respmenubtn").click(function() {
+
+        if( $(".main-nav_wrapp").is(":hidden") ) {
+
+            $(".main-nav_wrapp").fadeIn(300);
+
+            $(this).addClass("active");
+
+        } else {
+
+            $(".main-nav_wrapp").fadeOut(300);
+
+            $(this).removeClass("active");
+
+        }
+
+    });
+
+    $(this).keydown(function(eventObject){
+
+        if (eventObject.which == 27 &&
+            $(".main-nav_wrapp").is(":visible") ) {
+
+                $(".main-nav_wrapp").fadeOut(300);
+
+                $(".respmenubtn").removeClass("active");
+
+        }
+
+    });
+
+    // -----------------------
 
 	$(".show_popup").click(function(e) {
 
@@ -155,5 +194,51 @@ function getDocumentTopPadding() {
 	$(".wrapper").css({
 		"padding-top" :  $(".header").outerHeight() + "px"
 	});
+
+}
+
+function getAdaptivePositionElements() {
+
+    $(".append-elem").each(function() {
+
+        screenParam = parseInt( $(this).attr("data-min-screen") );
+
+        indexElem = $(this).attr("data-append-desktop-elem");
+
+        if( bodyWidth <= screenParam ) {
+
+            $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
+
+        }
+
+         if( bodyWidth > screenParam ) {
+
+            $("[data-append-desktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
+
+        }
+
+    });
+
+}
+
+function getPromoHeight() {
+
+    $(".promo-content").css({
+        "min-height" : "auto"
+    });
+
+    // if( bodyWidth > 768 ) {
+
+        $(".promo-content").css({
+            "min-height" : $(window).height() - $(".header").height() + "px"
+        });
+
+    // } else {
+
+        // $(".promo-content").css({
+        //     "min-height" : "auto"
+        // });
+
+    // }
 
 }

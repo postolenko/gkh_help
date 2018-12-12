@@ -1072,6 +1072,8 @@ input.transparent_red_pill {
     vertical-align: top;
     width: auto;
     max-width: 66px;
+    position: relative;
+    z-index: 12;
 }
 
 .logo img {
@@ -1313,6 +1315,128 @@ input.transparent_red_pill {
     padding-top: 13px;
 }
 
+.main-nav_wrapp {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 50px 2% 70px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: #F9F9FA;
+    text-align: center;
+}
+
+.main-nav_wrapp .append-elem {
+    margin: 20px 0;
+}
+
+/* ----- Responsive Menu Button ------ */
+
+.respmenubtn {
+    /*display: inline-block;*/
+    display: none;
+    vertical-align: middle;
+    width: 45px;
+    height: 37px;
+    margin-top: 26px;
+    background: transparent;
+    cursor: pointer;
+    /*position: relative;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 12;
+    border: 1px solid transparent;
+    text-align: left;
+}
+
+.respmenubtn span {
+    display: block;
+    width: 38px;
+    height: 3px;
+    background: #00AA71;
+    margin: 0 0 7px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-transition-property: transform, border, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform, border, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform, border, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform, border, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform, border, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+/*
+.respmenubtn span:nth-child(1) {
+    width: 31px;
+}
+
+.respmenubtn span:nth-child(2) {
+    width: 21px;
+}*/
+
+.respmenubtn span:last-child {
+    margin: 0;
+}
+
+.respmenubtn:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+.respmenubtn:hover span {
+    background: #00AA71;
+}
+
+.respmenubtn.active span {
+    position: relative;
+    width: 42px;
+    top: 1px;
+    left: 0;
+    margin: 0;
+    background: #00AA71;
+}
+
+.respmenubtn.active span:last-child {
+    display: none;
+}
+
+.respmenubtn.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.respmenubtn.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+    left: -1px;
+}
+
+/* ----- / Responsive Menu Button ------ */
+
 /*-- /Header 2 --*/
 
 /*-------------------------------------------*/
@@ -1330,8 +1454,17 @@ input.transparent_red_pill {
 }
 
 .promo-content {
-    padding-top: 129px;
-    padding-bottom: 130px;
+    display: table;
+    width: 100%;
+    /*min-height: 100vh;*/
+/*    padding-top: 129px;
+    padding-bottom: 130px;*/
+    padding-bottom: 50px;
+}
+
+.promo-content .inner {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .promo-content .left {
@@ -1427,6 +1560,9 @@ input.transparent_red_pill {
 
 .grey-bg {
     background: #F6F7F8;
+}
+
+.section_2 {
     padding: 99px 0 93px 0;
 }
 
@@ -2403,12 +2539,12 @@ p.green-p {
 }
 
 .footer_section .col:nth-child(4) {
-    width: 17%;
+    width: 18%;
 }
 
 .footer_section .col:nth-child(5) {
     padding-top: 26px;
-    width: 16%;
+    width: 17%;
 }
 
 .footer_section .col:nth-child(6) {
@@ -2424,6 +2560,7 @@ p.green-p {
 }
 
 .footer_section p a {
+    display: inline;
     font-size: 14px;
     line-height: 16px;
 }
