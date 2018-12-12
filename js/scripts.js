@@ -6,9 +6,9 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 $(window).load(function() {
 
-	getFooterPosition();
-	getDocumentTopPadding();
+	getFooterPosition();	
     getAdaptivePositionElements();
+    getDocumentTopPadding();
     getPromoHeight();
 
 });
@@ -227,18 +227,18 @@ function getPromoHeight() {
         "min-height" : "auto"
     });
 
-    // if( bodyWidth > 768 ) {
+    if( bodyWidth > 768 ) {
 
         $(".promo-content").css({
             "min-height" : $(window).height() - $(".header").height() + "px"
         });
 
-    // } else {
+    } else {
 
-        // $(".promo-content").css({
-        //     "min-height" : "auto"
-        // });
+        $(".promo-content").css({
+            "min-height" : "auto"
+        });
 
-    // }
+    }
 
 }
