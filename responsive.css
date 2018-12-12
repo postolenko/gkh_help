@@ -324,6 +324,16 @@
 
 }
 
+@media only screen and (max-width: 575px) {
+
+	.popup_article img {
+		display: block;
+	    float: none;
+	    margin: 20px auto;
+	}
+
+}
+
 @media only screen and (max-width: 480px) {
 
 	h1 {
@@ -353,6 +363,18 @@
 	.text_box p a {
 	    font-size: 16px;
 	    line-height: 24px;
+	}
+
+	.popup {
+	    /*max-width: 740px;*/
+	    /*background: #FFFDFD;*/
+	    /*margin: 40px auto;*/
+	    padding: 20px 10px;
+	}
+
+	.h2-desc {
+		text-align: center;
+	    font-size: 17px;
 	}
 
 	.footer_section .col:nth-child(1) {
