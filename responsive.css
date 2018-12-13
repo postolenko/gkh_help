@@ -542,6 +542,11 @@
 	.two-cols_3 {
 	    margin: 10px 0 0 0;
 	}
+
+	.two-cols_3 .green_pill_2,
+	.two-cols_3 .red_pill {
+	    width: 100%;
+	}
 	
 }
 
