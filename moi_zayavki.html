@@ -14,7 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-
+	<title>ЖКХ помощник - реши проблемы выгодно</title>
+	
 </head>
 
 <body>
@@ -34,25 +35,41 @@
 				</div>
 				<div class="right clearfix">
 					<div class="left">
-						<div class="overflow_wrapp">
-							<ul class="list_1">
-								<li><a href="#">Как работает?</a></li>
-							</ul>
+						<div class="append-elem" data-append-desktop-elem = "2" data-min-screen = "768">
+							<div class="overflow_wrapp">
+								<ul class="list_1">
+									<li><a href="#">Как работает?</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="left">
-						<a href="#" class="green_pill_2">Решить проблему </a>
-					</div>
-					<div class="right">
-						<p><a href="#" class="black_link_2">Константин Константинопольский<i class="user"></i></a></p>
-						<div class="overflow_wrapp">
-							<ul class="list_3">
-								<li><a href="#">Личный кабинет</a></li>
-								<li><a href="#" class="link_2">Мои заявки</a></li>
-								<li><a href="#" class="transparent_link">Выход</a></li>
-							</ul>
+						<div class="append-elem" data-append-desktop-elem = "1" data-min-screen = "1100">
+							<a href="#" class="green_pill_2">Решить проблему</a>
 						</div>
 					</div>
+					<div class="right">
+						<div class="append-elem" data-append-desktop-elem = "3" data-min-screen = "768">
+							<p><a href="#" class="black_link_2">Константин Константинопольский<i class="user"></i></a></p>
+							<div class="overflow_wrapp">
+								<ul class="list_3">
+									<li><a href="#">Личный кабинет</a></li>
+									<li><a href="#" class="link_2">Мои заявки</a></li>
+									<li><a href="#" class="transparent_link">Выход</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<button class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="main-nav_wrapp scroll">
+					<div class="append-elem" data-append-elem = "3"></div>
+					<div class="append-elem" data-append-elem = "2"></div>
+					<div class="append-elem" data-append-elem = "1"></div>
 				</div>
 			</div>
 		</div>
@@ -253,6 +270,7 @@
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/smoothscroll.js"></script>
 	<script src="vendors/js/select2.js"></script>
+	<script src="vendors/js/jquery.validate.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>
 

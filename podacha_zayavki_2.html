@@ -14,7 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-
+	<title>ЖКХ помощник - реши проблемы выгодно</title>
+	
 </head>
 
 <body>
@@ -81,7 +82,7 @@
 
 						<div class="form_wrapp">
 
-							<form>
+							<form id="form_2" method="post" action="">
 
 								<div>
 									
@@ -89,25 +90,25 @@
 											
 										<div class="col-1">
 											<div class="input_inner">
-												<input type="text" placeholder="Регион" />
+												<input type="text" name="region_2" placeholder="Регион" required />
 											</div>
 											<div class="input_inner_2">
 												<div class="col">
-													<input type="text" placeholder="Город" />
+													<input type="text" name="city_2" placeholder="Город" required />
 												</div>
 												<div class="col">
-													<input type="text" placeholder="Улица" />
+													<input type="text" name="street" placeholder="Улица" required />
 												</div>
 											</div>
 											<div class="input_inner_3">
 												<div class="col">
-													<input type="text" placeholder="Дом" />
+													<input type="text" name="house" placeholder="Дом" required />
 												</div>
 												<div class="col">
-													<input type="text" placeholder="Корп." />
+													<input type="text" name="corp" placeholder="Корп." />
 												</div>
 												<div class="col">
-													<input type="text" placeholder="Квартира" />
+													<input type="text" name="kv" placeholder="Квартира" required />
 												</div>
 											</div>
 										</div>
@@ -123,19 +124,19 @@
 										<div class="col-1">
 
 											<div class="input_inner">
-												<input type="text" placeholder="ФИО собственника " />
+												<input type="text" name="name_2" placeholder="ФИО собственника " required />
 											</div>
 
 											<div class="input_inner">
-												<input type="tel" placeholder="Телефон" />
+												<input type="tel" name="tel_2" placeholder="Телефон" required />
 											</div>
 
 											<div class="input_inner">
-												<input type="text" placeholder="Электронная почта" />
+												<input type="email" name="email_2" placeholder="Электронная почта" required />
 											</div>
 
 											<div class="input_inner">
-												<textarea placeholder="Описание проблемы"></textarea>
+												<textarea name="message" placeholder="Описание проблемы" required ></textarea>
 											</div>
 
 										</div>
@@ -153,11 +154,13 @@
 								</div>
 
 								<div class="submit_wrapp">
-									<input type="submit" class="transparent_pill" value="Сохранить в черновики" />
+									<!-- <input type="submit" class="transparent_pill" value="Сохранить в черновики" /> -->
+									<a href="#" class="transparent_pill">Сохранить в черновики</a>
 								</div>
 
 								<div class="submit_wrapp">
-									<input type="submit" class="transparent_red_pill" value="Отмена" />
+									<!-- <input type="submit" class="transparent_red_pill" value="Отмена" /> -->
+									<a href="#" class="transparent_red_pill">Отмена</a>
 								</div>
 
 							</form>
@@ -216,6 +219,7 @@
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/smoothscroll.js"></script>
 	<script src="vendors/js/select2.js"></script>
+	<script src="vendors/js/jquery.validate.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>
 

@@ -529,6 +529,19 @@
 	    width: 100%;
 	    padding-left: 0;
 	}
+
+	.popup_3 {
+	    padding-top: 70px;
+	}
+
+	.popup h2 {
+	    text-align: center;
+	    font-size: 25px;
+	}
+
+	.two-cols_3 {
+	    margin: 10px 0 0 0;
+	}
 	
 }
 
@@ -583,6 +596,30 @@
 	    margin: 5px 0;
 	}
 
+	.order-two_cols {
+		display: block;
+	}
+
+	.order-two_cols .col:nth-child(1) {
+		display: block;
+	    width: 100%;
+	    padding: 3px 0 5px 0;
+	}
+
+	.order-two_cols .col:nth-child(2) {
+		display: block;
+	    width: 100%;
+	    padding: 3px 0 5px 0;
+	}
+
+	.thanks_desc .green_pill_2 {
+	    min-width: 100%;
+	}
+
+	.order {
+	    padding: 18px 15px 29px 15px;
+	}
+
 	.footer_section .col:nth-child(1) p {
 	    font-size: 14px;
 	    line-height: 22px;
@@ -592,17 +629,6 @@
 	    font-size: 14px;
 	    line-height: 22px;
 	}
-
-}
-
-@media only screen and (max-width: 350px) {
-
-
-}
-
-@media only screen and (max-width: 320px) {
-
-	
 
 }
 

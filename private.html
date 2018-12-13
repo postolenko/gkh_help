@@ -14,7 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-
+	<title>ЖКХ помощник - реши проблемы выгодно</title>
+	
 </head>
 
 <body>
@@ -193,36 +194,37 @@
 		<div class="popup popup_2">
 			<button type="button" class="close-popup"></button>
 			<div id="add_info">
-				<form>
+				<form id="form_3" method="post" action="" />
 					<div class="popup-add_info">
 						<div class="user_info">
 							<p>Улица</p>
 							<div class="input_wrapp">
-								<input type="text" placeholder="" required id="street" />
+								<input type="text" name="street_3" placeholder="" required id="street" />
 							</div>
 						</div>
 						<div class="user_info">
 							<p>Дом</p>
 							<div class="input_wrapp">
-								<input type="text" placeholder="" required id="home" />
+								<input type="text" name="home_3" placeholder="" required id="home" />
 							</div>
 						</div>
 						<div class="user_info">
 							<p>Корпус</p>
 							<div class="input_wrapp">
-								<input type="text" placeholder="" id="corp" />
+								<input type="text" name="corp_3" placeholder="" id="corp" />
 							</div>
 						</div>
 						<div class="user_info">
 							<p>Квартира</p>
 							<div class="input_wrapp">
-								<input type="text" placeholder="" required id="flat" />
+								<input type="text" name="flat_3" placeholder="" required id="flat" />
 							</div>
 						</div>
 					</div>
 					<div class="btn_wrapp_2">
 						<div class="col">
-							<a href="#" class="green_pill_2 save">Сохранить</a>
+							<!-- <a href="#" class="green_pill_2 save">Сохранить</a> -->
+							<input type="submit" class="green_pill_2 save" value="Сохранить">
 						</div>
 						<div class="col">
 							<a href="#" class="red_pill cansel">Отмена</a>
@@ -240,6 +242,7 @@
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/smoothscroll.js"></script>
 	<script src="vendors/js/select2.js"></script>
+	<script src="vendors/js/jquery.validate.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>
 
