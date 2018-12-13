@@ -108,72 +108,72 @@ $(document).ready(function() {
 
     // ----------------------
 
-    // var userInfoLast;
-    // var addInfoTempl;
-    // var index;
+    var userInfoLast;
+    var addInfoTempl;
+    var index;
 
-    // $(".add_info_link").click(function(e) {
-    //     e.preventDefault();
-    //     userInfoLast = $(this).closest(".user_info");
-    //     index = parseInt( userInfoLast.find(".index").text() );
-    // });
+    $(".add_info_link").click(function(e) {
+        e.preventDefault();
+        userInfoLast = $(this).closest(".user_info");
+        index = parseInt( userInfoLast.find(".index").text() );
+    });
 
 
-    // $(".save").click(function() {
+    $(".save").click(function() {
 
-    //     var textRes = "";
+        var textRes = "";
 
-    //     parentBlock = $(this).closest("#add_info");
+        parentBlock = $(this).closest("#add_info");
 
-    //     parentBlock.find(".user_info input").each(function() {
+        parentBlock.find(".user_info input").each(function() {
 
-    //         if( $(this).val() != "" ) {
+            if( $(this).val() != "" ) {
 
-    //             if( $(this).attr("id") ==  "street" ) {
-    //                 textRes += "ул. " + $(this).val();
-    //             }
+                if( $(this).attr("id") ==  "street" ) {
+                    textRes += "ул. " + $(this).val();
+                }
 
-    //             if( $(this).attr("id") ==  "home" ) {
-    //                 textRes += " " + $(this).val();
-    //             }
+                if( $(this).attr("id") ==  "home" ) {
+                    textRes += " " + $(this).val();
+                }
 
-    //             if( $(this).attr("id") ==  "corp" ) {
-    //                 textRes += " корпус " + $(this).val();
-    //             }
+                if( $(this).attr("id") ==  "corp" ) {
+                    textRes += " корпус " + $(this).val();
+                }
 
-    //             if( $(this).attr("id") ==  "flat" ) {
-    //                 textRes += " кв. " + $(this).val();
-    //             }
+                if( $(this).attr("id") ==  "flat" ) {
+                    textRes += " кв. " + $(this).val();
+                }
 
-    //             $(this).val("");
+                $(this).val("");
 
-    //         }
+            }
 
-    //     });
+        });
 
-    //     userInfoLast.find(".p-2").text(textRes);
+        userInfoLast.find(".p-2").text(textRes);
 
-    //     index++;
+        index++;
 
-    //     addInfoTempl = "<div class='user_info'>" +
-    //                             "<p>Адрес <span class='index'>"+ index +"</span></p>" +
-    //                             "<p class='p-2'><a href='#' class='black_link show_popup add_info_link' data-popup-name ='popup_2'>+ Добавить</a></p>" +
-    //                         "</div>";
+        addInfoTempl = "<div class='user_info'>" +
+                                "<p>Адрес <span class='index'>"+ index +"</span></p>" +
+                                "<p class='p-2'><a href='#' class='black_link show_popup add_info_link' data-popup-name ='popup_2'>+ Добавить</a></p>" +
+                            "</div>";
 
-    //     eval( '$( addInfoTempl ).insertAfter( userInfoLast )' );
+        eval( '$( addInfoTempl ).insertAfter( userInfoLast )' );
 
-    //     $(this).closest(".popup_wrapp").removeClass("active");
+        $(this).closest(".popup_wrapp").removeClass("active");
 
-    // });
+    });
 
-    // $(".cansel").click(function(e) {
+    $(".cansel").click(function(e) {
 
-    //     e.preventDefault();
-    //     parentBlock = $(this).closest(".popup_wrapp");
-    //     parentBlock.find(".user_info input").val("");
-    //     parentBlock.removeClass("active");
+        e.preventDefault();
+        parentBlock = $(this).closest(".popup_wrapp");
+        parentBlock.find(".user_info input").val("");
+        parentBlock.removeClass("active");
 
-    // });
+    });
 
 });
 
