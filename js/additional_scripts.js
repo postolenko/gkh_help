@@ -68,7 +68,7 @@ $(document).ready(function() {
               maxlength: 40,
             },
             corp:{
-              required: true,
+              required: false,
               minlength: 1,
               maxlength: 40,
             },
