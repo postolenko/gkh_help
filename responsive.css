@@ -353,11 +353,6 @@
 	    padding: 20px 0;
 	}
 
-	.two-cols_3 .green_pill_2,
-	.two-cols_3 .red_pill {
-	    width: 100%;
-	}
-
 }
 
 @media only screen and (max-width: 700px) {
