@@ -49,12 +49,32 @@ $(document).ready(function() {
             },
             region:{
               required: true,
-              minlength: 2,
+              minlength: 1,
               maxlength: 40,
             },
             city:{
               required: true,
               minlength: 2,
+              maxlength: 40,
+            },
+            street:{
+              required: true,
+              minlength: 2,
+              maxlength: 40,
+            },
+            home:{
+              required: true,
+              minlength: 1,
+              maxlength: 40,
+            },
+            corp:{
+              required: true,
+              minlength: 1,
+              maxlength: 40,
+            },
+            flat:{
+              required: true,
+              minlength: 1,
               maxlength: 40,
             },
             tel:{
@@ -81,12 +101,32 @@ $(document).ready(function() {
             },
             region:{
               required: "Это поле обязательно для заполнения",
-              minlength: "Должно быть минимум 2 символа",
+              minlength: "Должно быть минимум 1 символа",
               maxlength: "Максимальное число символов - 40"
             },
             city:{
               required: "Это поле обязательно для заполнения",
               minlength: "Должно быть минимум 2 символа",
+              maxlength: "Максимальное число символов - 40"
+            },
+            street:{
+              required: "Это поле обязательно для заполнения",
+              minlength: "Должно быть минимум 2 символа",
+              maxlength: "Максимальное число символов - 40"
+            },
+            home:{
+              required: "Это поле обязательно для заполнения",
+              minlength: "Должно быть минимум 1 символ",
+              maxlength: "Максимальное число символов - 40"
+            },
+            corp:{
+              required: "Это поле обязательно для заполнения",
+              minlength: "Должно быть минимум 1 символ",
+              maxlength: "Максимальное число символов - 40"
+            },
+            flat:{
+              required: "Это поле обязательно для заполнения",
+              minlength: "Должно быть минимум 1 символ",
               maxlength: "Максимальное число символов - 40"
             },
             tel:{

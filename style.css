@@ -2340,6 +2340,10 @@ p.green-p {
     margin: 0 0 35px 0;
 }
 
+.user_info_2 .input_wrapp {
+    padding: 10px 0 10px 10px;
+}
+
 .user_info p {
     padding: 4px 0;
     font-size: 15px;
