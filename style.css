@@ -2377,7 +2377,7 @@ p.green-p {
 }
 
 .user_info {
-    margin: 0 0 23px 0;
+    margin: 0 0 18px 0;
 }
 
 .user_info:last-child {
@@ -2396,6 +2396,7 @@ p.green-p {
 
 .user_info .p-2 {
     font-size: 20px;
+    line-height: 26px;
     color: #1E1E1E;
 }
 
@@ -2459,36 +2460,6 @@ p.green-p {
 .orders_info a:hover {
     text-decoration: none;
 }
-
-/*.user_info .inner-row {
-    display: table;
-    width: 100%;
-}
-
-.user_info .inner-row .col {
-    display: table-cell;
-    vertical-align: top;
-}
-
-.user_info .inner-row .col:nth-child(1) {
-    width: 150px;
-    padding: 0 10px 0 3%;
-}
-
-.user_info .inner-row .col:nth-child(2) {
-    width: auto;
-    padding: 0 0 0 10px;
-}
-
-.user_info .inner-row p {
-    font-size: 20px;
-    color: #1E1E1E;
-}
-
-.user_info .inner-row .col:nth-child(1) p {
-    font-size: 17px;
-    color: rgba(30, 30, 30, .5);
-}*/
 
 .popup.popup_2 {
     padding-top: 40px;

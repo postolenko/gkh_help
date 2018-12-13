@@ -226,6 +226,24 @@
 
 	/*-- /Section 1 - Main Page --*/
 
+	.transparent_pill {
+		padding: 13px 20px;
+		font-size: 17px;
+	}
+
+	.transparent_red_pill {
+		padding: 13px 20px;
+		font-size: 17px;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.input_wrapp .col-1 {
+	    padding-right: 4%;
+	}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -295,16 +313,6 @@
 		margin: 5px 0;
 	}
 
-	/*.step p {
-	    font-size: 15px;
-	    line-height: 20px;
-	}
-
-	.step_2 p {
-	    font-size: 15px;
-	    line-height: 18px;
-	}*/
-
 	.section_3 {
 	    padding: 35px 0 70px 0;
 	}
@@ -334,6 +342,59 @@
 
 	.news_slider_wrapp .slider_arrows {
 	    bottom: -56px;
+	}
+
+	.form_wrapp {
+	    max-width: 780px;
+	    margin-bottom: 70px;
+	}
+
+	.scroll_box_sect {
+	    padding: 20px 0;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+	.input_wrapp {
+	    display: block;
+	}
+
+	.input_wrapp .col-1 {
+		display: block;
+	    width: 100%;
+	    padding: 0 0 10px 0;
+	}
+
+	.input_wrapp .col-2 {
+		display: block;
+	    width: 100%;
+	    padding: 0;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.two-cols_2 .left {
+	    width: 100%;
+	    float: none;
+	    padding: 0 0 20px 0;
+	}
+
+	.two-cols_2 .right {
+	    width: 100%;
+	    float: none;
+	    padding: 20px 0 0 0;
+	}
+
+	.user_info {
+	    margin: 0 0 13px 0;
+	}
+
+	.user_info .p-2 {
+	    font-size: 18px;
 	}
 
 }
@@ -415,15 +476,27 @@
 	}
 
 	.popup {
-	    /*max-width: 740px;*/
-	    /*background: #FFFDFD;*/
-	    /*margin: 40px auto;*/
 	    padding: 20px 10px;
 	}
 
 	.h2-desc {
 		text-align: center;
 	    font-size: 17px;
+	}
+
+	.submit_wrapp .green_pill_2,
+	.submit_wrapp .transparent_pill,
+	.submit_wrapp .transparent_red_pill {
+		width: 100%;
+	}
+
+	.thanks_desc {
+	    margin-bottom: 20px;
+	}
+
+	.thanks_desc p {
+	    font-size: 17px;
+	    line-height: 25px;
 	}
 
 	.footer_section .col:nth-child(1) {
@@ -482,6 +555,32 @@
 
 	.step_2 .img-box img {
 	    margin: 0 auto;
+	}
+
+	.input_inner_3 {
+		display: block;
+		font-size: 0;
+		line-height: 0;
+	}
+
+	.input_inner_3 .col {
+	    display: inline-block;
+	    width: 50%;
+	}
+
+	.input_inner_3 .col:nth-child(2) {
+		padding-left: 5px;
+	    padding-right: 0;
+	}
+
+	.input_inner_3 .col:nth-child(3) {
+	    padding-left: 0;
+	    padding-right: 5px;
+	}
+
+	.upload_wrapp {
+	    width: calc(50% - 5px);
+	    margin: 5px 0;
 	}
 
 	.footer_section .col:nth-child(1) p {
