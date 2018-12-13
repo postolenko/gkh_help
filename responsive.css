@@ -104,6 +104,14 @@
 	    padding: 63px 0 45px 0;
 	}
 
+	.promo-content .left {
+	    width: 66%;
+	}
+
+	.promo-content .right {
+	    width: 34%;
+	}
+
 	.step_2 {
 	    width: 50%;
 	}
@@ -179,12 +187,19 @@
 	    line-height: 23px;
 	}
 
+	.add_info p {
+	    padding: 10px 0;
+	    line-height: 22px;
+	    font-size: 21px;
+	    color: rgba(30, 30, 30, .2);
+	}
+
 	.steps_thumbs {
 	    margin: 6px -20px;
 	}
 
 	.step {
-	    padding: 10px 74px 10px 20px;
+		padding: 10px 45px 10px 20px;
 	}
 
 	.step p {
@@ -193,9 +208,10 @@
 	}
 
 	.step:after {
-	    width: 64px;
-	    height: 16px;
-	    top: 22px;
+		width: 53px;
+		height: 14px;
+		top: 22px;
+		right: -11px;
 	}
 
 	.red_pill {
@@ -213,16 +229,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-	.promo-content {
-		padding-top: 30px;
-	}
-
-	.right_position {
-	    width: 100%;
-	    padding-left: 0;
-	    float: none;
-	}
 
 	.header .row > .left {
 	    width: 50%;
@@ -245,13 +251,51 @@
 	    margin-top: 6px;
 	}
 
+	.promo-content {
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	.right_position {
+	    width: 100%;
+	    padding-left: 0;
+	    float: none;
+	}
+
+	.h1_wrapp {
+		margin-bottom: 20px;
+	}
+
 	.promo-content .left {
 	    width: 100%;
 	    float: none;
 	    padding: 10px 0 0 0;
 	}
 
-	.step p {
+	.promo-content .right {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0 0 0;
+	}
+
+	.add_info p {
+	    padding: 5px 0;
+	    line-height: 21px;
+	    font-size: 19px;
+	}
+
+	.steps_thumbs {
+		display: none;
+	}
+
+	.promo-content .red_pill,
+	.promo-content .green_pill_2 {
+		width: 100%;
+		max-width: 280px;
+		margin: 5px 0;
+	}
+
+	/*.step p {
 	    font-size: 15px;
 	    line-height: 20px;
 	}
@@ -259,7 +303,7 @@
 	.step_2 p {
 	    font-size: 15px;
 	    line-height: 18px;
-	}
+	}*/
 
 	.section_3 {
 	    padding: 35px 0 70px 0;
@@ -337,8 +381,8 @@
 @media only screen and (max-width: 480px) {
 
 	h1 {
-	    font-size: 32px;
-	    line-height: 47px;
+		font-size: 34px;
+		line-height: 49px;
 	}
 
 	h2 {
@@ -349,6 +393,11 @@
 
 	.row {
 		padding: 0 3%;
+	}
+
+	.h1_wrapp p {
+	    font-size: 19px;
+	    line-height: 23px;
 	}
 
 	.step_2:after {

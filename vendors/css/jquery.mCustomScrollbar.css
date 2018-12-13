@@ -1303,7 +1303,7 @@ yx-axis
     width: 22px;
 }
 
-.mCSB_inside > .mCSB_container {
+.scroll_box .mCSB_inside > .mCSB_container {
     margin-right: 20px;
     padding-right: 10px;
 }
