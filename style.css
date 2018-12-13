@@ -414,6 +414,10 @@ textarea::placeholder {
     overflow: hidden;
 }
 
+.resp_480 {
+    display: none;
+}
+
 /*-- Links --*/
 
 .black_link {
@@ -2566,6 +2570,10 @@ textarea + label.error {
 
 .footer_section .col:nth-child(6) p {
     opacity: .5;
+}
+
+.footer_section .resp_480 {
+    padding: 10px 0;
 }
 
 /*-- Popup --*/

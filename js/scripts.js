@@ -6,9 +6,8 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 $(window).load(function() {
 
-	getFooterPosition();	
+	getFooterPosition();
     getAdaptivePositionElements();
-    getDocumentTopPadding();
     getPromoHeight();
     showRespBtn();
 
@@ -19,7 +18,6 @@ $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 	getFooterPosition();
-	getDocumentTopPadding();
     getAdaptivePositionElements();
     getPromoHeight();
     showRespBtn();
@@ -113,20 +111,13 @@ $(document).ready(function() {
 function getFooterPosition() {
 
     $(".footer_section").css({
-        "margin-top" : -$(".footer_section").height() + "px"
+        "margin-top" : -$(".footer_section").outerHeight() + "px"
     });
 
     $(".wrapper").css({
-        "padding-bottom" : $(".footer_section").height() + "px"
+        "padding-top" :  $(".header").outerHeight() + "px",
+        "padding-bottom" : $(".footer_section").outerHeight() + "px"
     });
-
-}
-
-function getDocumentTopPadding() {
-
-	$(".wrapper").css({
-		"padding-top" :  $(".header").outerHeight() + "px"
-	});
 
 }
 

@@ -461,6 +461,10 @@
 		padding: 0 3%;
 	}
 
+	.resp_480 {
+		display: block;
+	}
+
 	.h1_wrapp p {
 	    font-size: 19px;
 	    line-height: 23px;
@@ -533,6 +537,16 @@
 	.footer_section .col:nth-child(6) {
 	    width: 100%;
 	    padding-left: 0;
+	}
+
+	.footer_section .col:nth-child(1) p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.footer_section .col:nth-child(1) p a {
+		font-size: 14px;
+		line-height: 16px;
 	}
 
 	.popup_3 {
