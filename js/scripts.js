@@ -10,6 +10,7 @@ $(window).load(function() {
     getAdaptivePositionElements();
     getDocumentTopPadding();
     getPromoHeight();
+    showRespBtn();
 
 });
 
@@ -21,6 +22,7 @@ $(window).resize(function() {
 	getDocumentTopPadding();
     getAdaptivePositionElements();
     getPromoHeight();
+    showRespBtn();
 
 });
 
@@ -59,7 +61,7 @@ $(document).ready(function() {
 
     // -----------------------
 
-	$(".show_popup").click(function(e) {
+    $(document.body).on('click', '.show_popup', function(e) {
 
         e.preventDefault();
 
@@ -112,19 +114,16 @@ $(document).ready(function() {
     var addInfoTempl;
     var index;
 
-    $(".add_info_link").click(function(e) {
+    $(document.body).on('click', '.add_info_link', function(e) {
         e.preventDefault();
         userInfoLast = $(this).closest(".user_info");
         index = parseInt( userInfoLast.find(".index").text() );
     });
 
-
-    $(".save").click(function() {
+    $(document.body).on('click', '.save', function(e) {
 
         var textRes = "";
-
         parentBlock = $(this).closest("#add_info");
-
         parentBlock.find(".user_info input").each(function() {
 
             if( $(this).val() != "" ) {
@@ -150,18 +149,13 @@ $(document).ready(function() {
             }
 
         });
-
         userInfoLast.find(".p-2").text(textRes);
-
         index++;
-
         addInfoTempl = "<div class='user_info'>" +
                                 "<p>Адрес <span class='index'>"+ index +"</span></p>" +
                                 "<p class='p-2'><a href='#' class='black_link show_popup add_info_link' data-popup-name ='popup_2'>+ Добавить</a></p>" +
                             "</div>";
-
-        eval( '$( addInfoTempl ).insertAfter( userInfoLast )' );
-
+        $( addInfoTempl ).insertAfter( userInfoLast );
         $(this).closest(".popup_wrapp").removeClass("active");
 
     });
@@ -238,6 +232,24 @@ function getPromoHeight() {
         $(".promo-content").css({
             "min-height" : "auto"
         });
+
+    }
+
+}
+
+function showRespBtn() {
+
+    if( $(".respmenubtn").is(":visible") ) {
+
+        if( $(".main-nav_wrapp .append-elem *").length > 0 ) {
+
+            $(".respmenubtn").addClass("visible");
+
+        } else {
+
+            $(".respmenubtn").removeClass("visible");
+
+        }
 
     }
 

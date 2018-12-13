@@ -1344,13 +1344,16 @@ input.transparent_red_pill {
     margin-top: 26px;
     background: transparent;
     cursor: pointer;
-    /*position: relative;*/
     position: absolute;
-    top: 0;
+    top: -100%;
     right: 0;
     z-index: 12;
     border: 1px solid transparent;
     text-align: left;
+}
+
+.respmenubtn.visible {
+    top: 0;
 }
 
 .respmenubtn span {
@@ -1657,7 +1660,6 @@ input.transparent_red_pill {
 }
 
 .thumbnails {
-    /*max-width: 638px;*/
     margin: 0 -16px;
 }
 
@@ -2713,5 +2715,31 @@ p.green-p {
     vertical-align: top;
     padding: 3px;
 }
+
+.popup_3 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 69px;
+    padding-bottom: 20px;
+}
+
+.two-cols_3 {
+    margin: 34px 0 0 0;
+}
+
+.two-cols_3 .col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.two-cols_3 .green_pill_2,
+.two-cols_3 .red_pill {
+    margin: 5px;
+}
+
 
 /*-- /Popup --*/

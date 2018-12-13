@@ -14,3 +14,4 @@
 # http://postolenko.github.io/gkh_help/soglashenie.html
 # http://postolenko.github.io/gkh_help/private.html
 # http://postolenko.github.io/gkh_help/private_edit.html
+# http://postolenko.github.io/gkh_help/popup.html
