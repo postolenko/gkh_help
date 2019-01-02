@@ -1450,12 +1450,12 @@ input.transparent_red_pill {
 }
 
 .promo-content .left {
-    width: 72%;
+    width: 73%;
     padding: 10px 1% 0 0;
 }
 
 .promo-content .right {
-    width: 28%;
+    width: 27%;
     padding: 38px 0 0 13px;
 }
 
@@ -1470,13 +1470,50 @@ input.transparent_red_pill {
 }
 
 .steps_thumbs .step {
-    display: inline-block;
+    display: inline-table;
     vertical-align: top;
+    min-height: 103px;
 }
 
 .step {
     padding: 15px 110px 15px 26px;
     position: relative;
+}
+
+.step:nth-child(even) {
+    padding-right: 10px;
+}
+
+.step .col:nth-child(1) {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80px;
+}
+
+.step .col:nth-child(2) {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    padding-left: 4px;
+}
+
+.step:nth-child(even) .col:nth-child(1) {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+}
+
+.step:nth-child(even) .col:nth-child(2) {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80px;
+    padding-left: 16px;
+}
+
+.step .col img {
+    display: block;    
+    max-width: 100%;
+    width: auto;
 }
 
 .step p {
@@ -1493,10 +1530,10 @@ input.transparent_red_pill {
 .step:after {
     display: block;
     content: "";
-    width: 100px;
-    height: 28px;
+    width: 98px;
+    height: 24px;
     position: absolute;
-    top: 12px;
+    top: 28px;
     right: 0;
     background-image: url(img/arrow.svg);
     background-position: center;
